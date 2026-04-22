@@ -120,12 +120,10 @@ namespace ListIB
                 vStack.Children.Add(nameLabel);
                 vStack.Children.Add(capitalLabel);
 
-                var favSwitch = new Switch { VerticalOptions = LayoutOptions.Center };
-                favSwitch.SetBinding(Switch.IsToggledProperty, "IsFavorite");
+                
                 
                 rowGrid.Add(flagImage, 0, 0);
                 rowGrid.Add(vStack, 1, 0);
-                rowGrid.Add(favSwitch, 2, 0);
 
                 frame.Content = rowGrid;
 
